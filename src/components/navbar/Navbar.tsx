@@ -2,19 +2,12 @@ import { useState, useEffect } from "react";
 import {
   Navbar as NavbarComponent,
   Typography,
-  Button,
   IconButton,
-  Collapse,
-  // Avatar,
 } from "@material-tailwind/react";
-import { useNavigate } from "react-router-dom";
-import { urls } from "../../global/variables.ts";
 import { HashLink } from "react-router-hash-link";
-import header_logo from '/assets/Header_logo.png';
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     window.addEventListener(

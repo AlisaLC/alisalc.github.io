@@ -1,6 +1,5 @@
 import { Footer, Header, Section, TextOnlySection } from "../../containers";
 import { Navbar, ProjectCarousel } from "../";
-import { Children } from "react";
 import SkillList from "../skills/Skills";
 
 function shuffle(array: number[]) {
@@ -85,19 +84,19 @@ function Landing() {
     <>
       <Navbar />
       <Header />
-      <Section name="About Me" side="right" dino={crocs[0]}>
+      <Section name="About Me" side="left" dino={crocs[0]}>
         <TextOnlySection>
           <p>I am Ali Salesi, a student of Computer Engineering at Sharif University of Technology. In my journey as a software engineer and a machine learning engineer, I've gained practical and research experience. My time as a Software Engineer at System Group, working on Cloud Sepidar, increased my proficiency in system architecture. My time as a Machine Learning Engineer at Yektanet gave me experience with big data and how to be proficient while processing huge loads of data.</p>
           <p>I look forward to the opportunity, to bring my skills and passion to the research team and contribute to the future where AI is being used everywhere to improve the quality of everyday life.</p>
         </TextOnlySection>
       </Section>
-      <Section name="Skills" side="right" dino={crocs[3]}>
+      <Section name="Skills" side="right" dino={crocs[1]}>
         <SkillList skills={skills} />
       </Section>
-      <Section name="Projects">
+      <Section name="Projects" side="left" dino={crocs[2]}>
         <ProjectCarousel projects={projects} />
       </Section>
-      <Section name="Background" side="left" dino={crocs[2]}>
+      <Section name="Background" side="right" dino={crocs[3]}>
         <TextOnlySection>
           <p>In my academic journey and practical experiences, I have cultivated a strong foundation in machine learning and deep learning fundamentals, demonstrating proficiency in the use of cutting-edge technologies. I am well-versed in the PyTorch framework, having utilized it extensively in various projects, underscoring my practical skills in implementing and experimenting with deep learning models.</p>
           <p>Furthermore, my exploration of VLMs has equipped me with a nuanced understanding of the intersection between computer vision and natural language processing. I enjoy working with multi-modal models. I am excited about the prospect of leveraging these skills and experiences to contribute meaningfully to the research on novel high-quality image generation methods.</p>

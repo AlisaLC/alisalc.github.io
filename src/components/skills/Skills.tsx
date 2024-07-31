@@ -1,5 +1,5 @@
 import { Progress, Typography } from "@material-tailwind/react";
-import { RefObject, useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Skill {
     name: string;
