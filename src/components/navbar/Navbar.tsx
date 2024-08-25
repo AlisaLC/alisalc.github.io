@@ -3,6 +3,7 @@ import {
   Navbar as NavbarComponent,
   Typography,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
 import { HashLink } from "react-router-hash-link";
 
@@ -27,6 +28,14 @@ const Navbar = () => {
         <HashLink to="#about-me" smooth={true}>
           <a className="flex items-center">About Me</a>
         </HashLink>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <a href="https://scholar.google.com/citations?user=STDD9qMAAAAJ&hl=en" className="flex items-center">Publications</a>
       </Typography>
       <Typography
         as="li"
@@ -127,6 +136,9 @@ const Navbar = () => {
           </IconButton>
         </div>
       </div>
+      <Collapse open={openNav}>
+        {navList}
+      </Collapse>
     </NavbarComponent>
   );
 };
