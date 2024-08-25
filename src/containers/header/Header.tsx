@@ -18,7 +18,7 @@ const Header = () => {
                   "Large Language Models",
 		              "Diffusion Models",
                   "Adversarial Attacks",
-		              "Reinforcement Learning",
+                  "Bias and Safety",
                   "Big Data",
                 ],
                 autoStart: true,

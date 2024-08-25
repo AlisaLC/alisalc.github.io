@@ -1,6 +1,5 @@
 import { Footer, Header, Section, TextOnlySection } from "../../containers";
-import { Navbar, ProjectCarousel } from "../";
-import SkillList from "../skills/Skills";
+import { Navbar, ProjectCarousel, SkillList } from "../";
 
 function shuffle(array: number[]) {
   let currentIndex = array.length, randomIndex;
@@ -54,28 +53,34 @@ const projects = [
     image: "assets/UNet.png",
     link: "https://github.com/AlisaLC/PaperDenoiser",
   },
+  {
+    name: "Annoy Go",
+    description: "a fast read-only native implementation of Annoy (Approximate Nearest Neighbors by Spotify) in Go",
+    image: "assets/annoy.png",
+    link: "https://github.com/AlisaLC/annoy-go",
+  },
 ];
 
 const skills = [
   {
     name: "Python",
-    percentage: 90
+    percentage: 95
+  },
+  {
+    name: "PyTorch",
+    percentage: 90,
+  },
+  {
+    name: "Transformers",
+    percentage: 85,
   },
   {
     name: "Deep Learning",
     percentage: 85,
   },
   {
-    name: "Golang",
+    name: "System Design",
     percentage: 80,
-  },
-  {
-    name: "SQL",
-    percentage: 90,
-  },
-  {
-    name: "React",
-    percentage: 65,
   }
 ]
 
