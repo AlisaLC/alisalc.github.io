@@ -107,7 +107,7 @@ function Landing() {
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
-              <TimelineIcon />
+              <TimelineIcon color="white" />
               <Typography variant="h3" color="white" className="text-left">
                 Research Assistant - Prof. Soleymani
               </Typography>
@@ -133,7 +133,7 @@ function Landing() {
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
-              <TimelineIcon />
+              <TimelineIcon color="white" />
               <Typography variant="h3" color="white" className="text-left">
                 Research Assistant - Prof. Sabokroo
               </Typography>
