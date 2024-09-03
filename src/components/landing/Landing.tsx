@@ -29,17 +29,16 @@ const projects = [
     link: "https://github.com/AlisaLC/WSSChatBot",
   },
   {
-    name: "Yu Gi Oh! 3D",
-    description: "A 3D implentation of Yu Gi Oh! card game",
-    image: "",
-    link: "https://github.com/AlisaLC/AP-YuGiOh3D",
-    video: "https://www.aparat.com/video/video/embed/videohash/m926r89/vt/frame"
-  },
-  {
     name: "Face Gallery Bot",
     description: "Find your face among all the pictures in a gallery using MTCNN",
     image: "assets/MTCNN.png",
     link: "https://github.com/AlisaLC/FaceGalleryTelegramBot",
+  },
+  {
+    name: "Paper Denoiser",
+    description: "a test for using different models in denoising crumpled black and white papers with ink stains",
+    image: "assets/UNet.png",
+    link: "https://github.com/AlisaLC/PaperDenoiser",
   },
   {
     name: "GraDino",
@@ -48,10 +47,11 @@ const projects = [
     link: "https://github.com/AlisaLC/GraDino",
   },
   {
-    name: "Paper Denoiser",
-    description: "a test for using different models in denoising crumpled black and white papers with ink stains",
-    image: "assets/UNet.png",
-    link: "https://github.com/AlisaLC/PaperDenoiser",
+    name: "Yu Gi Oh! 3D",
+    description: "A 3D implentation of Yu Gi Oh! card game",
+    image: "",
+    link: "https://github.com/AlisaLC/AP-YuGiOh3D",
+    video: "https://www.aparat.com/video/video/embed/videohash/m926r89/vt/frame"
   },
   {
     name: "Annoy Go",
@@ -75,13 +75,13 @@ const skills = [
     percentage: 85,
   },
   {
-    name: "Deep Learning",
+    name: "Large Language Models",
     percentage: 85,
   },
   {
-    name: "System Design",
-    percentage: 80,
-  }
+    name: "Deep Learning",
+    percentage: 85,
+  },
 ]
 
 function Landing() {
@@ -91,8 +91,7 @@ function Landing() {
       <Header />
       <Section name="About Me" side="left" dino={crocs[0]}>
         <TextOnlySection>
-          <p>I am Ali Salesi, a student of Computer Engineering at Sharif University of Technology. In my journey as a software engineer and a machine learning engineer, I've gained practical and research experience. My time as a Software Engineer at System Group, working on Cloud Sepidar, increased my proficiency in system architecture. My time as a Machine Learning Engineer at Yektanet gave me experience with big data and how to be proficient while processing huge loads of data.</p>
-          <p>I look forward to the opportunity, to bring my skills and passion to the research team and contribute to the future where AI is being used everywhere to improve the quality of everyday life.</p>
+          <p>I am a final-year Computer Engineering student at Sharif University of Technology, with a strong focus on adversarial attacks in the context of Large Language Models (LLMs). My research interests lie at the intersection of bias, fairness, and the vulnerabilities of LLMs to adversarial manipulation in natural language processing. Through both my academic studies and industry experience as a Machine Learning Engineer at Yektanet and System Group, I have developed a deep understanding of the challenges posed by these models. My recent publication addresses the bias inherent in LLMs and explores methods to enhance their fairness and explore their biases. I am eager to bring my expertise to a research team committed to advancing AI in a way that is both ethical and robust against adversarial threats.</p>
         </TextOnlySection>
       </Section>
       <Section name="Skills" side="right" dino={crocs[1]}>
@@ -101,10 +100,23 @@ function Landing() {
       <Section name="Projects" side="left" dino={crocs[2]}>
         <ProjectCarousel projects={projects} />
       </Section>
-      <Section name="Background" side="right" dino={crocs[3]}>
+      <Section name="Experiences" side="right" dino={crocs[3]}>
         <TextOnlySection>
-          <p>In my academic journey and practical experiences, I have cultivated a strong foundation in machine learning and deep learning fundamentals, demonstrating proficiency in the use of cutting-edge technologies. I am well-versed in the PyTorch framework, having utilized it extensively in various projects, underscoring my practical skills in implementing and experimenting with deep learning models.</p>
-          <p>Furthermore, my exploration of VLMs has equipped me with a nuanced understanding of the intersection between computer vision and natural language processing. I enjoy working with multi-modal models. I am excited about the prospect of leveraging these skills and experiences to contribute meaningfully to the research on novel high-quality image generation methods.</p>
+          <h2>Research Experience</h2>
+          <h3>Research Assistant - Prof. Soleymani</h3>
+          <p>Conducted research to develop metrics for assessing alignment, diversity, and quality in diffusion-based image
+            generators across various prompts.
+            Developed a comprehensive pipeline for image generation, incorporating prompt rewriting to enhance diversity and
+            quality, followed by image generation and rigorous testing for quality, diversity, and alignment to identify optimal
+            outputs.
+            Performed statistical analyses to detect gender bias in actions using verb + object combinations generated by GPT
+            and crawled from the LAION dataset.
+            Investigated methodologies to mitigate biases in task-specific generated images through prompt tuning and inpainting
+            techniques, leading to a paper accepted at ECAI 2024.
+            Collaborated on research in self-supervised representation learning, where I implemented contrastive learning
+            methodologies, including the Barlow Twins method, to enhance model performance and robustness and VICReg
+            (Variance-Invariance-Covariance Regularization) to stabilize the training process, further improving the eﬀiciency and
+            reliability of the model.</p>
         </TextOnlySection>
       </Section>
       <Footer />
