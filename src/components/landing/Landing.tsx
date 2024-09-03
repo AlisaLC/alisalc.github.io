@@ -64,25 +64,63 @@ const projects = [
 
 const skills = [
   {
-    name: "Python",
-    percentage: 95
-  },
-  {
-    name: "PyTorch",
-    percentage: 90,
-  },
-  {
-    name: "Transformers",
-    percentage: 85,
-  },
-  {
-    name: "Large Language Models",
-    percentage: 85,
-  },
-  {
     name: "Deep Learning",
-    percentage: 85,
+    content: [
+      {
+        name: "PyTorch",
+        percentage: 90,
+      },
+      {
+        name: "Transformers",
+        percentage: 90,
+      },
+      {
+        name: "Spark",
+        percentage: 90,
+      },
+      {
+        name: "Scikit-learn",
+        percentage: 85,
+      },
+      {
+        name: "Large Language Models",
+        percentage: 85,
+      },
+      {
+        name: "Deep Learning",
+        percentage: 85,
+      },
+    ]
   },
+  {
+    name: "Programming",
+    content: [
+      {
+        name: "Python",
+        percentage: 95
+      },
+      {
+        name: "Go",
+        percentage: 90,
+      },
+      {
+        name: "Docker",
+        percentage: 85,
+      },
+      {
+        name: "TypeScript",
+        percentage: 85,
+      },
+      {
+        name: "PosgreSQL",
+        percentage: 85,
+      },
+      {
+        name: "Django",
+        percentage: 85,
+      },
+    ]
+  }
 ]
 
 function Landing() {
@@ -131,7 +169,6 @@ function Landing() {
             </TimelineBody>
           </TimelineItem>
           <TimelineItem>
-            <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon color="white" />
               <Typography variant="h3" color="white" className="text-left">
