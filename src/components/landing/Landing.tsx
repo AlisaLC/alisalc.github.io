@@ -140,7 +140,7 @@ function Landing() {
         <ProjectCarousel projects={projects} />
       </Section>
       <Section name="Experiences" side="right" dino={crocs[3]}>
-        <Typography variant="h2" color="white" className="text-left">Research Experience</Typography>
+        <Typography variant="h2" color="white" className="text-left mb-2">Research Experience</Typography>
         <Timeline>
           <TimelineItem>
             <TimelineConnector />
