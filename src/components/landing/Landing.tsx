@@ -1,4 +1,4 @@
-import { Footer, Header, Section, TextOnlySection } from "../../containers";
+import { Background, Footer, Header, Section, TextOnlySection } from "../../containers";
 import { Navbar, ProjectCarousel, SkillList } from "../";
 import { Timeline, TimelineBody, TimelineConnector, TimelineHeader, TimelineIcon, TimelineItem, Typography } from "@material-tailwind/react";
 
@@ -126,6 +126,7 @@ const skills = [
 function Landing() {
   return (
     <>
+      <Background />
       <Navbar />
       <Header />
       <Section name="About Me" side="left" dino={crocs[0]}>
