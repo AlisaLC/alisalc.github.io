@@ -1,7 +1,6 @@
 import { Footer, Header, Section, TextOnlySection } from "../../containers";
 import { Navbar, ProjectCarousel, SkillList } from "../";
 import { Timeline, TimelineBody, TimelineConnector, TimelineHeader, TimelineIcon, TimelineItem, Typography } from "@material-tailwind/react";
-import Background from "../../containers/background/Background";
 
 function shuffle(array: number[]) {
   let currentIndex = array.length, randomIndex;
