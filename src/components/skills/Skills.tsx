@@ -21,23 +21,29 @@ const SkillList = ({ skills }: Props) => {
     const [percentages, setPercentages] = useState(Object.fromEntries(skills.map((tab) => (tab.content.map((member) => [member.name, 0]))).flat()))
 
     const fillPercentage = () => {
+        var done = true;
         for (const tab of skills) {
+            if (tab.name != activeTab) {
+                continue;
+            }
             for (const member of tab.content) {
-                console.log(member)
                 if (percentages[member.name] >= 1) {
                     percentages[member.name] = 1;
                 } else {
-                    percentages[member.name] += 0.005;
+                    done = false;
+                    percentages[member.name] += 0.01;
                 }
             }
         }
         setPercentages({ ...percentages })
-        setTimeout(() => fillPercentage(), 30)
+        if (!done) {
+            setTimeout(() => fillPercentage(), 20)
+        }
     }
 
     useEffect(() => {
         fillPercentage()
-    }, [])
+    }, [activeTab])
 
     return (
         <Tabs value={activeTab}>

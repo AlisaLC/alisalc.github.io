@@ -17,7 +17,7 @@ const ProjectCarousel = ({ projects }: Props) => {
   const [autoplay, setAutoplay] = useState(true);
 
   return (
-    <Carousel transition={{ duration: 0.5 }} autoplay={autoplay} className="rounded-xl">
+    <Carousel transition={{ duration: 0.5 }} autoplay={autoplay} className="rounded-xl lg:max-w-[44rem] md:max-w-[36rem] sm:max-w-[26rem]">
       {projects.map((member) => (
         <div className="flex flex-col items-center justify-center h-96 bg-gray-900" onClick={() => { setAutoplay(false) }} key={member.name}>
           <a href={member.link}>
@@ -27,7 +27,7 @@ const ProjectCarousel = ({ projects }: Props) => {
             {!member.video && <img src={member.image} alt="" className="w-48 h-48 rounded-full" />}
             <h1 className="text-2xl font-bold text-white mt-4">{member.name}</h1>
           </a>
-          <h2 className="text-xl text-white w-84">{member.description}</h2>
+          <h2 className="text-xl text-white lg:max-w-[40rem] md:max-w-[32rem] sm:max-w-[22rem]">{member.description}</h2>
         </div>
       ))}
     </Carousel>

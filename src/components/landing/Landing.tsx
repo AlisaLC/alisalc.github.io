@@ -1,6 +1,7 @@
 import { Footer, Header, Section, TextOnlySection } from "../../containers";
 import { Navbar, ProjectCarousel, SkillList } from "../";
 import { Timeline, TimelineBody, TimelineConnector, TimelineHeader, TimelineIcon, TimelineItem, Typography } from "@material-tailwind/react";
+import Background from "../../containers/background/Background";
 
 function shuffle(array: number[]) {
   let currentIndex = array.length, randomIndex;
@@ -147,10 +148,13 @@ function Landing() {
             <TimelineHeader className="h-3">
               <TimelineIcon color="white" />
               <Typography variant="h3" color="white" className="text-left">
-                Research Assistant - Prof. Soleymani
+                Sharif University of Technology
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
+              <Typography variant="h4" color="white" className="text-left">
+                Research Assistant - Prof. Soleymani
+              </Typography>
               <Typography variant="small" color="white" className="text-left">
                 <p>Conducted research to develop metrics for assessing alignment, diversity, and quality in diffusion-based image
                   generators across various prompts.</p>
@@ -172,10 +176,13 @@ function Landing() {
             <TimelineHeader className="h-3">
               <TimelineIcon color="white" />
               <Typography variant="h3" color="white" className="text-left">
-                Research Assistant - Prof. Sabokroo
+                Okinawa Institute of Science and Technology
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
+              <Typography variant="h4" color="white" className="text-left">
+                Research Assistant - Prof. Sabokroo
+              </Typography>
               <Typography variant="small" color="white" className="text-left">
                 <p>Conducted comprehensive research on the impacts of simple to complex backdoor attacks on diverse continual
                   learning methods, with a focus on developing effective defense mechanisms against these attacks.</p>
